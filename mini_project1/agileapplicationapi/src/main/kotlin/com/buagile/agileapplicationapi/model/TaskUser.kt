@@ -6,7 +6,7 @@ import javax.persistence.GeneratedValue
 import javax.persistence.GenerationType
 
 @Entity
-class User(
+class TaskUser(
         val userId: String,
         val userName: String,
         val userEmail: String,
