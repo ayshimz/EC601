@@ -1,7 +1,7 @@
 # Mini Project 1 -- API Project (Alternative API Project)
 
 ## Description
-The Agile-Application-Api takes post requests (with JSON body) and saves correctly-formatted data to a Postgres database that is runs locally. This API has been tested and it automatically creates a table under a testdb database.
+The Agile-Application-Api takes post requests (with JSON body) and saves correctly-formatted data to a Postgres database that is run locally. This API has been tested and it automatically creates a table under a database named "testdb".
 This API is written in Kotlin and is a Spring-Boot application.
 
 ## Steps to Running the API
