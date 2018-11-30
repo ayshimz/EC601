@@ -17,6 +17,10 @@ Post-Upload of Excel Sheet
 Access available in localhost:8080
 ![post](https://github.com/ayshimz/EC601/blob/master/mini_project3/images/findall.JPG)
 
+## Running the Project
+clone the git repository.
+You can use IDEA Ultimate (which is what I use) or your own editor.
+Run npm start in terminal. You will need npm to run this project.
 
 
 
