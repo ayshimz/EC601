@@ -14,10 +14,10 @@ class App extends Component {
         readXlsxFile(file).then((rows) => {
           // `rows` is an array of rows
           // each row being an array of cells.
-          console.log(rows)
           let rowName = rows[0]
           let rowData = rows.slice(1)
           let dataList = []
+          console.log(rows)
           rowData.forEach((r) => {
             let payload = {}
             let i
@@ -31,15 +31,17 @@ class App extends Component {
           let chatterData = {
             "type": "CLASSLIST",
             "userId": "instructor",
-            "projectId": file,
+            "projectId": file.name,
             "data": JSON.stringify(dataList)
           }
-          chatterPost(dataList)
+          chatterPost(chatterData)
         })
 
       };
       reader.onabort = () => console.log('file reading was aborted');
       reader.onerror = () => console.log('file reading has failed');
+
+      reader.readAsBinaryString(file);
     });
   }
 
